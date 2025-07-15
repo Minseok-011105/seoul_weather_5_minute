@@ -5,7 +5,7 @@ from datetime import datetime  # 시간 변환
 
 WEATHER_API_KEY = os.getenv("API_KEY_W")
 city = "seoul"
-url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={API_KEY}&units=metric"
+url = f"https://api.openweathermap.org/data/2.5/weather?q={city}&appid={WEATHER_API_KEY}&units=metric"
 
 response = requests.get(url)
 result = response.json()
